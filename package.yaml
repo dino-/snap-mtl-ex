@@ -1,0 +1,64 @@
+name: snap-barebones
+version: '1.0'
+synopsis: A bare-bones Snap Framework website
+description: A stack-enabled example of the web server created by 'snap init barebones'
+license: ISC
+author: Dino Morelli
+maintainer: dino@ui3.info
+copyright: 2022 Dino Morelli
+stability: Experimental
+category: Web
+extra-source-files:
+- CHANGELOG.md
+- .gitignore
+- log/.gitignore
+- package.yaml
+- README.md
+- stack.yaml
+
+# github: dino-/snap-barebones
+
+ghc-options:
+- -fwarn-tabs
+- -Wall
+- -Wcompat
+- -Werror  # Around the time of lts-12.11 (ghc < 8.4.3), this is no longer recommended
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+# - -Wpartial-fields
+- -Wredundant-constraints
+
+default-extensions:
+- BangPatterns
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveLift
+- DeriveTraversable
+- EmptyCase
+- FlexibleContexts
+- FlexibleInstances
+- GeneralizedNewtypeDeriving
+- InstanceSigs
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- MultiWayIf
+- NamedFieldPuns
+- OverloadedStrings
+- ScopedTypeVariables
+- StandaloneDeriving
+- TupleSections
+
+dependencies:
+- base >=4 && <5
+
+executables:
+  snap-barebones:
+    source-dirs: src
+    main: Main.hs
+    dependencies:
+    - bytestring
+    - mtl
+    - snap-core
+    - snap-server

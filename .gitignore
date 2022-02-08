@@ -1,0 +1,7 @@
+# stack uses this directory for build artifacts
+/.stack-work/
+
+# stack generates the cabal file from `package.yaml` with hpack
+/*.cabal
+
+stack.yaml.lock
