@@ -1,7 +1,7 @@
-name: snap-barebones
+name: snap-mtl-ex
 version: '1.0'
-synopsis: A bare-bones Snap Framework website
-description: A stack-enabled example of the web server created by 'snap init barebones'
+synopsis: An mtl example for the Snap Framework
+description: Example project showing using monad transformers with the Snap Framework
 license: ISC
 author: Dino Morelli
 maintainer: dino@ui3.info
@@ -54,7 +54,7 @@ dependencies:
 - base >=4 && <5
 
 executables:
-  snap-barebones:
+  snap-mtl-ex:
     source-dirs: src
     main: Main.hs
     dependencies:

@@ -1,18 +1,18 @@
-# snap-barebones
+# snap-mtl-ex
 
 
 ## Synopsis
 
-A bare-bones Snap Framework website
+An mtl example for the Snap Framework
 
 ## Description
 
-A stack-enabled example of the web server created by 'snap init barebones'
+Example project showing using monad transformers with the Snap Framework
 
 ## Getting source
 
 Source code is available from github at the
-[snap-barebones](https://github.com/dino-/snap-barebones) project page.
+[snap-mtl-ex](https://github.com/dino-/snap-mtl-ex) project page.
 
 
 ## Contact
