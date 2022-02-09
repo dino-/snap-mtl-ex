@@ -59,6 +59,9 @@ executables:
     main: Main.hs
     dependencies:
     - bytestring
+    - containers
     - mtl
     - snap-core
     - snap-server
+    - stm
+    - transformers
