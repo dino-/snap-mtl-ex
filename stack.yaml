@@ -1,3 +1,5 @@
+# As of 2022-02-09 this is the most-recent lts Stackage snapshot the Snap
+# Framework builds against.
 resolver: lts-11.22
 
 packages:
