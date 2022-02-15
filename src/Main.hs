@@ -7,7 +7,7 @@ import Control.Concurrent.STM.TVar ( TVar, newTVar, readTVar, writeTVar )
 import Control.Monad.IO.Class ( liftIO )
 import Control.Monad.STM ( atomically )
 import Control.Monad.Trans.Reader ( ReaderT, asks, runReaderT )
-import qualified Data.ByteString.Char8 as B
+import qualified Data.ByteString as B
 import qualified Data.Set as S
 import Snap.Core
 import Snap.Http.Server
